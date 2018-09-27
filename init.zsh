@@ -18,6 +18,7 @@ while read -r line; do
   value=${line#* }
   value="${value#"${value%%[![:space:]]*}"}" # Remove leading whitespaces
   value="${value%"${value##*[![:space:]]}"}" # Remove trailing whitespaces
+  value="${value/\(git/\$(git}" # Fix fish-style string interpolation
 
   # shellcheck disable=SC2139
   alias "$key"="$value"
