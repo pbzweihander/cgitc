@@ -159,3 +159,5 @@ gds                  git diff --stat
 ggpush               git push --set-upstream origin HEAD
 grhh1                git reset --hard HEAD~1
 gp!                  git push --force-with-lease
+gcof                 git checkout (git branch | fzf)
+gaf                  git add git add (git status -s | fzf -m | awk '{print $2}')
