@@ -161,3 +161,4 @@ grhh1                git reset --hard HEAD~1
 gp!                  git push --force-with-lease
 gcof                 git checkout (git branch | fzf)
 gaf                  git add git add (git status -s | fzf -m | awk '{print $2}')
+gdo                  git diff origin/(git_current_branch)
