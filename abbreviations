@@ -157,6 +157,7 @@ gcaa                 git commit -v -a --amend
 gdl                  git difftool
 gds                  git diff --stat
 ggpush               git push --set-upstream origin HEAD
+grh1                 git reset HEAD~1
 grhh1                git reset --hard HEAD~1
 gp!                  git push --force-with-lease
 gcof                 git checkout (git branch | fzf)
